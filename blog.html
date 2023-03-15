@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Header/Navbar section start -->
+    <header class="h-16 flex items-center shadow-sm">
+      <nav class="flex justify-between items-center w-9/12 mx-auto">
+        <div class="text-zinc-800 font-bold uppercase">
+          <h1 class="text-lg">Quiz <span class="text-green-700">HERO</span></h1>
+          <p class="text-[10px] font-normal capitalize -mt-1">
+            Get ready to Quiz and be amazed!
+          </p>
+        </div>
+        <button
+          class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white"
+        >
+          Home
+        </button>
+      </nav>
+    </header>
+    <main class="px-10 mt-5">
+      <div
+        tabindex="0"
+        class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mt-2"
+      >
+        <div class="collapse-title text-xl font-medium">
+          Difference between map, filter, for each, find.
+        </div>
+        <div class="collapse-content">
+          <p>
+            <strong>map()</strong>: creates a new array by executing a provided
+            function on each element of the array. <br />
+
+            <strong>filter()</strong>: creates a new array with all elements
+            that pass a test implemented by the provided function. <br />
+
+            <strong>forEach()</strong>: executes a provided function once for
+            each array element. <br />
+
+            <strong>find()</strong>: returns the value of the first element in
+            the array that satisfies a provided testing function.
+          </p>
+        </div>
+      </div>
+      <div
+        tabindex="1"
+        class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mt-2"
+      >
+        <div class="collapse-title text-xl font-medium">
+          Difference between LocalStorage, Session Storage, Cookie
+        </div>
+        <div class="collapse-content">
+          <p>
+            <strong>LocalStorage</strong> is a way to store data in the user's
+            browser that persists even after the browser is closed. It is not
+            session-specific and can be accessed by any script from the same
+            origin. The data is stored as key-value pairs and can be used to
+            store larger amounts of data than cookies. <br />
+
+            <strong>SessionStorage</strong> is similar to LocalStorage, but the
+            data is only available for the duration of the browser session. Once
+            the user closes the browser, the data is lost. Like LocalStorage,
+            Session Storage stores data as key-value pairs and can be accessed
+            by scripts from the same origin. <br />
+
+            <strong>Cookies</strong> are small text files that are stored on the
+            user's computer by the website they are visiting. They are often
+            used to store information like user preferences or login
+            information. Unlike LocalStorage and Session Storage, cookies are
+            sent to the server with every request, which can slow down the
+            website. They also have a size limit of 4KB.
+          </p>
+        </div>
+      </div>
+      <div
+        tabindex="2"
+        class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mt-2"
+      >
+        <div class="collapse-title text-xl font-medium">
+          What is event loop and How it works?
+        </div>
+        <div class="collapse-content">
+          <p>
+            The event loop in JavaScript manages the execution of code in
+            response to asynchronous events by continuously checking a message
+            queue for new events. When an event occurs, the event loop pushes a
+            message containing information about the event and a callback
+            function onto the queue. The callback function is then executed when
+            the message is dequeued and there is no synchronous code in the call
+            stack.
+          </p>
+        </div>
+      </div>
+      <div
+        tabindex="3"
+        class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mt-2"
+      >
+        <div class="collapse-title text-xl font-medium">
+          About Quiz Timer function.
+        </div>
+        <div class="collapse-content">
+          <p>
+            The Quiz timer function gives us about the time of answering the
+            quiz.
+          </p>
+        </div>
+      </div>
+      <div
+        tabindex="4"
+        class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mt-2"
+      >
+        <div class="collapse-title text-xl font-medium">
+          About Choose Quiz function.
+        </div>
+        <div class="collapse-content">
+          <p>
+            This function is used to choose the ans of the questions on the main
+            page. If the chosen ans of a question is already given then it
+            updates with the new ans and if the chosen ans is not selected then
+            it pushes the ans in a array
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
